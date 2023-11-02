@@ -1,0 +1,2 @@
+# OLink Redirect
+ Programa desenvolvido em JavaFX para rodar no windows, linux ou outro sistema operacional que possua o JDK Instalado. Esse sistema é voltado ao marketing digital como um redirecionador de links como o bit.ly, mas com funções diferenciadas como aplicar PIXEL de rstreamento, testes A/B, gerenciamento de link por canais sociais como conteudos do Youtube, Instagram, Facebook etc... Além disso é possivel visualizar estatísticas de desempenho de cada link, como taxa de cliques por dia,semana,mes ou ano atráves de um gráfico charts
