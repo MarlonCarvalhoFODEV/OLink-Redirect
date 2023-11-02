@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="412.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frames.login.LoginController">
+   <children>
+      <VBox alignment="CENTER" layoutY="-4.0" prefHeight="419.0" prefWidth="600.0" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-4.0">
+         <ImageView fx:id="ivLogo" fitHeight="117.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../resources/icon.png" />
+            </image>
+            <VBox.margin>
+               <Insets bottom="20.0" />
+            </VBox.margin>
+         </ImageView>
+
+         <HBox alignment="CENTER" prefHeight="35.0" prefWidth="572.0" spacing="5.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+            <children>
+               <TextField fx:id="etEmail" prefHeight="30.0" prefWidth="246.0" promptText="E-Mail" style="-fx-border-radius: 15; -fx-background-radius: 15;">
+                  <HBox.margin>
+                     <Insets />
+                  </HBox.margin>
+                  <padding>
+                     <Insets left="10.0" />
+                  </padding>
+                  <font>
+                     <Font size="14.0" />
+                  </font>
+               </TextField>
+            </children>
+            <VBox.margin>
+               <Insets bottom="15.0" />
+            </VBox.margin>
+         </HBox>
+         <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="35.0" prefWidth="572.0" spacing="5.0">
+            <children>
+               <PasswordField fx:id="etPassword" prefHeight="30.0" prefWidth="247.0" promptText="Senha" style="-fx-background-radius: 15; -fx-border-radius: 15;">
+                  <padding>
+                     <Insets left="10.0" />
+                  </padding>
+                  <font>
+                     <Font size="14.0" />
+                  </font></PasswordField>
+            </children>
+         </HBox>
+         <JFXButton fx:id="btnRememberPass" alignment="CENTER_RIGHT" contentDisplay="RIGHT" onAction="#requestPassword" prefHeight="25.0" prefWidth="246.0" text="esqueci a senha" textFill="#6bc3f2">
+            <padding>
+               <Insets bottom="15.0" top="5.0" />
+            </padding>
+         </JFXButton>
+         <JFXButton fx:id="btnLogin" buttonType="RAISED" maxHeight="28.0" minHeight="28.0" onAction="#login" prefHeight="28.0" prefWidth="156.0" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-background-color: #E8675E;" text="Login" textFill="WHITE">
+            <font>
+               <Font size="14.0" />
+            </font></JFXButton>
+         <Button fx:id="btnRegisterAccount" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#newAccount" prefHeight="30.0" prefWidth="133.0" style="-fx-background-color: #00000000;" text="Criar Uma Conta" textFill="#15b1e1">
+            <font>
+               <Font size="14.0" />
+            </font>
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <VBox.margin>
+               <Insets bottom="15.0" top="15.0" />
+            </VBox.margin>
+         </Button>
+
+      </VBox>
+      <AnchorPane prefHeight="55.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ImageView fx:id="ivBack" fitHeight="150.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <image>
+                  <Image url="@../../resources/back_bottom.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="102.0" layoutY="20.0" prefHeight="17.0" prefWidth="497.0" text="Powered By Renda Livre.com" textFill="WHITE" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <BorderPane fx:id="bpLoading" opacity="0.8" prefHeight="412.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <JFXSpinner maxHeight="45.0" maxWidth="45.0" minHeight="45.0" minWidth="45.0" prefHeight="45.0" prefWidth="45.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+      <StackPane fx:id="stackPane" prefHeight="150.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>

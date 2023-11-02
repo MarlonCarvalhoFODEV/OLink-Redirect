@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/JavaFX/lib/gson.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/JavaFX/lib/json.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/JavaFX/lib/jfoenix.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/JavaFX/lib/jsoup.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,28 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="OLinkRedirect">
+    <output-path>$PROJECT_DIR$/out/artifacts/OLinkRedirect</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="frames.splashscreen.SplashActivity" />
+        <option name="description" value="Encurtador de Links Profissional voltado para o Marketing Digital" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="icons">
+          <JavaFxApplicationIcons>
+            <option name="linuxIcon" value="$PROJECT_DIR$/src/resources/icon.png" />
+            <option name="macIcon" value="$PROJECT_DIR$/src/resources/icon.icns" />
+            <option name="windowsIcon" value="$PROJECT_DIR$/src/resources/icon.ico" />
+          </JavaFxApplicationIcons>
+        </option>
+        <option name="nativeBundle" value="all" />
+        <option name="title" value="OLink Redirect" />
+        <option name="vendor" value="Renda Livre.com" />
+        <option name="version" value="2.7" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="OLinkRedirect.jar">
+        <element id="module-output" name="OLinkRedirect" />
+      </element>
+    </root>
+  </artifact>
+</component>

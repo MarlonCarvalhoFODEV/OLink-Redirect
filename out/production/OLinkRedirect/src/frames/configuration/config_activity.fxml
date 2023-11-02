@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="767.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frames.configuration.ConfigurationController">
+   <children>
+      <BorderPane prefWidth="767.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="CONFIGURAÇÕES" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets bottom="14.0" top="20.0" />
+               </BorderPane.margin>
+            </Label>
+         </top>
+         <center>
+            <Accordion BorderPane.alignment="CENTER">
+              <panes>
+                <TitledPane text="BACKUP PIXEL - FACEBOOK - BETA">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="460.0" prefWidth="765.0" style="-fx-background-color: white;">
+                           <children>
+                              <VBox layoutX="54.6" layoutY="51.6" prefHeight="215.0" prefWidth="586.0" spacing="10.0" AnchorPane.bottomAnchor="221.0" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="42.0">
+                                 <children>
+                                    <Label prefHeight="27.0" prefWidth="183.0" text="Novo Pixel">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <Separator prefWidth="200.0" />
+                                    <TextField fx:id="etIdAccountADS" promptText="ID - Conta de Anúncios">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="etAccessToken" layoutX="10.0" layoutY="60.0" promptText="Token de Acesso">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="etPixelName" layoutX="10.0" layoutY="100.0" promptText="Nome Pixel Backup">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <Separator prefWidth="200.0">
+                                       <padding>
+                                          <Insets bottom="20.0" top="20.0" />
+                                       </padding>
+                                    </Separator>
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="27.0" prefWidth="183.0" text="Usar Pixel Existente">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="etPixelExisting" layoutX="10.0" layoutY="140.0" promptText="ID - Pixel de Backup">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="etAccessToken2" promptText="Token e de Acesso">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <JFXButton buttonType="RAISED" onAction="#saveAccountBackupOrPixelBackup" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: #E55A51; -fx-background-radius: 5;" text="Salvar" textFill="WHITE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                              </VBox>
+                              <BorderPane fx:id="bpProgress" layoutX="-80.0" layoutY="-13.0" opacity="0.79" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <center>
+                                    <ProgressIndicator maxHeight="45.0" maxWidth="45.0" minHeight="45.0" minWidth="45.0" prefHeight="45.0" prefWidth="45.0" BorderPane.alignment="CENTER">
+                                       <effect>
+                                          <ColorAdjust brightness="0.25" contrast="-0.36" hue="0.5" />
+                                       </effect>
+                                    </ProgressIndicator>
+                                 </center>
+                              </BorderPane>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </TitledPane>
+                  <TitledPane text="COMERCIALIZAR PIXELS">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="765.0" style="-fx-background-color: white;">
+                           <children>
+                              <ListView layoutY="7.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                              <JFXButton buttonType="RAISED" layoutX="666.0" layoutY="355.0" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="117.0" style="-fx-background-color: #E56560; -fx-background-radius: 15;" text="Salvar" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="35.0" />
+                              <VBox layoutX="243.6" layoutY="33.6" maxHeight="399.0" minHeight="399.0" prefHeight="399.0" prefWidth="495.0" spacing="10.0" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="234.0" AnchorPane.rightAnchor="36.0" AnchorPane.topAnchor="24.0">
+                                 <children>
+                                    <VBox prefHeight="126.0" prefWidth="495.0" spacing="10.0">
+                                       <children>
+                                          <Separator prefWidth="200.0" />
+                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="175.0" text="MINHA CONTA DE ANÚNCIOS">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets bottom="10.0" />
+                                             </padding>
+                                          </Label>
+                                          <TextField fx:id="etIdAccountADS11" promptText="ID - Conta de Anúncios">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </TextField>
+                                          <TextField fx:id="etAccessToken11" layoutX="10.0" layoutY="60.0" promptText="Token de Acesso">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </VBox>
+                                    <Separator prefWidth="200.0" />
+                                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="86.0" text="NOVO CLIENTE">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="etIdAccountADS12" layoutX="10.0" layoutY="190.0" promptText="Nome">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="etIdAccountADS1" promptText="ID - Conta de Anúncios">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="etAccessToken1" layoutX="10.0" layoutY="60.0" promptText="Token de Acesso">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="etAccessToken111" layoutX="10.0" layoutY="140.0" promptText="Nicho">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="etAccessToken11" layoutX="10.0" layoutY="100.0" promptText="Valor R$">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <AnchorPane prefHeight="476.0" prefWidth="767.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="-0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Label alignment="CENTER" layoutX="359.0" layoutY="52.0" text="AVALIAÇÃO" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="108.0" layoutY="212.0" lineSpacing="10.0" text="VOCÊ GOSTARIA DE COMERCIALIZAR LOOKALIKES?" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox alignment="CENTER" layoutX="14.0" layoutY="327.0" prefHeight="100.0" prefWidth="200.0" spacing="20.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+                                       <children>
+                                          <JFXButton buttonType="RAISED" onAction="#rateNot" prefHeight="49.0" prefWidth="154.0" style="-fx-background-color: #FF0000; -fx-background-radius: 30;" text="NÃO" textFill="WHITE">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </JFXButton>
+                                          <JFXButton buttonType="RAISED" layoutX="292.0" layoutY="36.0" onAction="#rateYes" prefHeight="49.0" prefWidth="154.0" style="-fx-background-color: #59B200; -fx-background-radius: 30;" text="SIM" textFill="WHITE">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </JFXButton>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </TitledPane>
+              </panes>
+            </Accordion>
+         </center>
+      </BorderPane>
+      <BorderPane fx:id="bpProgress" opacity="0.8" prefHeight="429.0" prefWidth="732.0" style="-fx-background-color: white;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <ProgressIndicator maxHeight="45.0" maxWidth="45.0" minHeight="45.0" minWidth="45.0" prefHeight="45.0" prefWidth="45.0" BorderPane.alignment="CENTER">
+               <effect>
+                  <ColorAdjust brightness="0.26" contrast="-0.48" hue="0.5" />
+               </effect>
+            </ProgressIndicator>
+         </center>
+      </BorderPane>
+      <StackPane fx:id="stackPane" prefHeight="150.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="55.0" />
+   </children>
+</AnchorPane>

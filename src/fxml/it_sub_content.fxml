@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="50.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" >
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutY="-2.0" prefHeight="50.0" prefWidth="500.0" spacing="10.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="itSubContentIcon" fitHeight="43.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="itSubContentTitle" text="Title">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Label fx:id="itSubContentLink" text="https://www.google.com/ebook" />
+            <Button fx:id="itSubContentCopy" mnemonicParsing="false" />
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label fx:id="itSubContentCountClick" text="0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="cliques" />
+                     </children>
+                  </VBox>
+               </children></HBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

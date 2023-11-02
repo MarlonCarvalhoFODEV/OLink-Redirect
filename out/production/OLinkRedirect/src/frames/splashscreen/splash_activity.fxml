@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="354.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frames.splashscreen.SplashController">
+   <children>
+      <VBox alignment="BOTTOM_CENTER" layoutX="14.0" layoutY="14.0" prefHeight="258.0" prefWidth="600.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="ivLogo" fitHeight="150.0" fitWidth="133.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+               </image>
+            </ImageView>
+            <Label text="OLink Redirect">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnDownloadUpdate" prefHeight="31.0" prefWidth="121.0" style="-fx-background-color: #E8675F; -fx-background-radius: 15; -fx-border-radius: 15;" text="ATUALIZAR" textFill="WHITE" visible="false">
+               <opaqueInsets>
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="10.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+      <AnchorPane prefHeight="56.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ImageView fx:id="ivBack" fitHeight="57.0" fitWidth="600.0" layoutY="1.420166015625" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-0.722686767578125" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <image>
+                  <Image url="@../../../../../../../../MY%20FILES/N.E.G.O.C.I.O.S/OLINK%20REDIRECT/Backgrounds/back_bottom.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="20.0" prefWidth="112.0" text="Powered by Renda Livre.com" textFill="WHITE" AnchorPane.bottomAnchor="4.0" AnchorPane.rightAnchor="10.0">
+               <font>
+                  <Font size="8.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="21.0" layoutY="14.0" prefHeight="30.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" layoutY="79.0" prefHeight="30.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <ProgressIndicator prefHeight="20.0" prefWidth="20.0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <effect>
+                        <Lighting diffuseConstant="0.0" specularConstant="2.0" specularExponent="0.0" surfaceScale="10.0">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </ProgressIndicator>
+                  <Label fx:id="lbInfoUpdate" prefHeight="20.0" text="Carregando..." textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="446.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frames.account.register.RegisterAccountController">
+   <children>
+      <BorderPane prefHeight="404.0" prefWidth="600.0" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <VBox alignment="CENTER" prefHeight="331.0" prefWidth="600.0" spacing="5.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="43.0" prefWidth="600.0">
+                     <children>
+                        <ImageView fitHeight="38.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../resources/icon.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="OLink Redirect       " textFill="#e8675e">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="50.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="35.0" prefWidth="572.0" spacing="5.0">
+                     <children>
+                        <TextField fx:id="etName" prefHeight="30.0" prefWidth="246.0" promptText="Nome" style="-fx-background-radius: 15; -fx-border-radius: 15;">
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="35.0" prefWidth="572.0" spacing="5.0">
+                     <children>
+                        <TextField fx:id="etEmail" prefHeight="30.0" prefWidth="246.0" promptText="Email" style="-fx-background-radius: 15; -fx-border-radius: 15;">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="50.0" prefHeight="35.0" prefWidth="572.0" spacing="5.0">
+                     <children>
+                        <PasswordField fx:id="etPassword" prefHeight="30.0" prefWidth="246.0" promptText="Senha" style="-fx-background-radius: 15; -fx-border-radius: 15;">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </PasswordField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="90.0" prefHeight="35.0" prefWidth="572.0" spacing="5.0">
+                     <children>
+                        <PasswordField fx:id="etConfirmPassword" prefHeight="30.0" prefWidth="246.0" promptText="Confirme senha" style="-fx-background-radius: 15; -fx-border-radius: 15;">
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </PasswordField>
+                     </children>
+                  </HBox>
+                  <JFXButton fx:id="btnRegister" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" maxHeight="34.0" maxWidth="150.0" minHeight="34.0" onAction="#registerAccount" prefHeight="34.0" prefWidth="150.0" style="-fx-background-color: #E8675E; -fx-background-radius: 20; -fx-border-radius: 20;" text="Cadastrar-me" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </center>
+         <bottom>
+            <AnchorPane prefHeight="91.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="57.0" fitWidth="600.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="33.0">
+                     <image>
+                        <Image url="@../../../resources/back_bottom.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="236.0" layoutY="66.0" prefHeight="17.0" text="Powered By Renda Livre.com" textFill="WHITE" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="236.0" AnchorPane.rightAnchor="236.0">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </bottom>
+      </BorderPane>
+
+      <BorderPane fx:id="bpLoading" opacity="0.78" prefHeight="444.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <JFXSpinner maxHeight="45.0" maxWidth="45.0" minHeight="45.0" minWidth="45.0" prefHeight="45.0" prefWidth="45.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+      <StackPane fx:id="stackPane" prefHeight="150.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+
+   </children>
+</AnchorPane>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="OLinkRedirect:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/OLinkRedirect_jar</output-path>
+    <root id="archive" name="OLinkRedirect.jar">
+      <element id="module-output" name="OLinkRedirect" />
+    </root>
+  </artifact>
+</component>

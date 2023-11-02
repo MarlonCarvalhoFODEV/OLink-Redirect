@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="203.0" prefWidth="406.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frames.dashboard.DialogNewChannelController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="169.0" layoutY="44.0" prefHeight="221.0" prefWidth="406.0" spacing="10.0" style="-fx-background-radius: 15; -fx-border-radius: 15;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="39.0" prefWidth="406.0" style="-fx-background-color: linear-gradient(to right, #E56560, #913D87);">
+               <children>
+                  <ImageView fitHeight="33.0" fitWidth="32.0" layoutX="15.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="5.0">
+                     <image>
+                        <Image url="@../../../../OLink%20Redirect/src/main/java/resources/icon_micro.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lbTitle" alignment="CENTER" contentDisplay="CENTER" layoutX="66.0" layoutY="13.0" text="Novo Canal" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <HBox alignment="CENTER" prefHeight="41.0" prefWidth="406.0">
+               <children>
+                  <TextField fx:id="etName" maxHeight="30.0" maxWidth="233.0" minHeight="30.0" minWidth="233.0" prefHeight="30.0" prefWidth="233.0" promptText="Nome" style="-fx-background-radius: 15; -fx-border-radius: 15;">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="52.0" prefHeight="41.0" prefWidth="406.0">
+               <children>
+                  <ComboBox fx:id="cbSpecification" prefHeight="30.0" prefWidth="235.0" promptText="Selecione epecificação" style="-fx-background-radius: 15;" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="62.0" prefHeight="41.0" prefWidth="406.0" />
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="147.0" prefHeight="41.0" prefWidth="406.0">
+               <children>
+                  <TextField fx:id="etIdPixelCode" maxHeight="30.0" maxWidth="286.0" minHeight="30.0" minWidth="233.0" prefHeight="30.0" prefWidth="286.0" promptText="ID - Pixel Channel" style="-fx-background-radius: 15; -fx-border-radius: 15;">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="41.0" prefWidth="406.0">
+               <children>
+                  <TextField fx:id="etIdPixelBackup" maxHeight="30.0" maxWidth="286.0" minHeight="30.0" minWidth="233.0" prefHeight="30.0" prefWidth="286.0" promptText="ID - Pixel Backup" style="-fx-background-radius: 15; -fx-border-radius: 15;">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <JFXButton fx:id="btnAddChannel" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" maxHeight="30.0" maxWidth="110.0" minHeight="30.0" minWidth="110.0" onAction="#addChannel" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: #E56560; -fx-background-radius: 15;" text="Adicionar" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+      <BorderPane fx:id="bpProgress" opacity="0.8" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+         <center>
+            <JFXSpinner maxHeight="45.0" maxWidth="45.0" minHeight="45.0" minWidth="45.0" prefHeight="45.0" prefWidth="45.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

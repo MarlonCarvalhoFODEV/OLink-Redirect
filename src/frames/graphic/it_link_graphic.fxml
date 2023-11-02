@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="54.0" prefWidth="323.0" style="-fx-background-color: white; -fx-border-width: 0.5; -fx-border-color: #a8a8a8;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1">
+   <children>
+      <ImageView fx:id="ivIconLink" fitHeight="31.0" fitWidth="28.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="12.0">
+         <image>
+            <Image url="@../../resources/link.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lbLinkName" layoutX="71.0" layoutY="18.0" text="https://domain.com" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

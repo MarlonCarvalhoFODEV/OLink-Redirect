@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
+
+<BorderPane fx:id="panelPartner" prefWidth="200.0" style="-fx-border-color: #d9d9d9; -fx-border-radius: 8;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <left>
+        <VBox prefWidth="176.0" style="-fx-border-color: #d9d9d9; -fx-border-radius: 8 0 0 8;" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER_LEFT" prefWidth="200.0">
+                    <children>
+                        <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../resources/icon_client.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </HBox.margin>
+                        </ImageView>
+                        <Label fx:id="lbRegisters" text="Cadastros ( 0 )" />
+                    </children>
+                    <VBox.margin>
+                        <Insets top="5.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" layoutX="11.0" layoutY="16.0" prefWidth="200.0">
+                    <children>
+                        <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../resources/icon_money.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </HBox.margin>
+                        </ImageView>
+                        <Label fx:id="lbSubscribers" text="Assinantes ( 0 )" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" layoutX="11.0" layoutY="41.0" prefWidth="200.0">
+                    <children>
+                        <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../resources/icon_conversion.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </HBox.margin>
+                        </ImageView>
+                        <Label fx:id="lbConversions" text="Convertidos ( 0 )" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" layoutX="11.0" layoutY="66.0" prefWidth="200.0">
+                    <children>
+                        <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../resources/icon_cancel.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </HBox.margin>
+                        </ImageView>
+                        <Label fx:id="lbCancels" text="Cancelados ( 0 )" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </left>
+    <right>
+        <VBox prefWidth="176.0" style="-fx-border-color: #d9d9d9; -fx-border-radius: 0 8 8 0;" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER_LEFT" prefWidth="200.0">
+                    <children>
+                        <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../resources/icon_revenue.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </HBox.margin>
+                        </ImageView>
+                        <Label fx:id="lbRevenue" text="Receita ( 0 )" />
+                    </children>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <VBox.margin>
+                        <Insets top="5.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" layoutX="11.0" layoutY="16.0" prefWidth="200.0">
+                    <children>
+                        <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../resources/icon_calendar.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </HBox.margin>
+                        </ImageView>
+                        <Label fx:id="lbRevenueMonthly" text="Receita Mensal ( 0 )" />
+                    </children>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </HBox>
+            </children>
+        </VBox>
+    </right>
+    <center>
+        <VBox alignment="TOP_CENTER" prefWidth="100.0" BorderPane.alignment="TOP_CENTER">
+            <children>
+                <HBox alignment="TOP_CENTER" prefWidth="200.0">
+                    <children>
+                        <HBox prefWidth="125.0" />
+                        <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" contentDisplay="RIGHT" style="-fx-background-color: #B74F75; -fx-background-radius: 15;" text="Copy Partner Link" textAlignment="CENTER" textFill="WHITE">
+                            <padding>
+                                <Insets bottom="5.0" left="16.0" right="16.0" top="5.0" />
+                            </padding>
+                            <HBox.margin>
+                                <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+                            </HBox.margin>
+                        </JFXButton>
+                        <HBox alignment="TOP_RIGHT" layoutX="31.0" layoutY="10.0" prefWidth="125.0">
+                            <children>
+                                <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../resources/premium2.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets top="8.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children>
+                </HBox>
+                <ScrollPane fitToWidth="true" hbarPolicy="NEVER" pannable="true" style="-fx-background-color: transparent;" vbarPolicy="NEVER">
+                    <content>
+                        <HBox alignment="BOTTOM_CENTER" prefHeight="50.0" spacing="7.0" style="-fx-background-color: white;">
+                            <children>
+                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../resources/premium.png" />
+                                    </image>
+                                </ImageView>
+                                <Circle fill="DODGERBLUE" radius="2.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-fill: #B74F75;">
+                                    <HBox.margin>
+                                        <Insets bottom="16.0" />
+                                    </HBox.margin>
+                                </Circle>
+                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../resources/premium.png" />
+                                    </image>
+                                </ImageView>
+                                <Circle fill="DODGERBLUE" radius="2.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-fill: #B74F75;">
+                                    <HBox.margin>
+                                        <Insets bottom="16.0" />
+                                    </HBox.margin>
+                                </Circle>
+                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../resources/premium.png" />
+                                    </image>
+                                </ImageView>
+                                <Circle fill="DODGERBLUE" radius="2.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-fill: #B74F75;">
+                                    <HBox.margin>
+                                        <Insets bottom="16.0" />
+                                    </HBox.margin>
+                                </Circle>
+                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../resources/premium.png" />
+                                    </image>
+                                </ImageView>
+                                <Circle fill="DODGERBLUE" radius="2.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-fill: #B74F75;">
+                                    <HBox.margin>
+                                        <Insets bottom="16.0" />
+                                    </HBox.margin>
+                                </Circle>
+                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../resources/premium.png" />
+                                    </image>
+                                </ImageView>
+                                <Circle fill="DODGERBLUE" radius="2.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-fill: #B74F75;">
+                                    <HBox.margin>
+                                        <Insets bottom="16.0" />
+                                    </HBox.margin>
+                                </Circle>
+                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../resources/premium.png" />
+                                    </image>
+                                </ImageView>
+                                <Circle fill="DODGERBLUE" radius="2.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-fill: #B74F75;">
+                                    <HBox.margin>
+                                        <Insets bottom="16.0" />
+                                    </HBox.margin>
+                                </Circle>
+                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../resources/premium.png" />
+                                    </image>
+                                </ImageView>
+                                <Circle fill="DODGERBLUE" radius="2.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-fill: #B74F75;">
+                                    <HBox.margin>
+                                        <Insets bottom="16.0" />
+                                    </HBox.margin>
+                                </Circle>
+                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../resources/premium.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </content>
+                    <VBox.margin>
+                        <Insets bottom="16.0" />
+                    </VBox.margin>
+                </ScrollPane>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>
+

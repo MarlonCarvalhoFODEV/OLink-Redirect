@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="481.0" prefWidth="455.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frames.newlink.NewLinkController">
+   <children>
+      <AnchorPane maxHeight="36.0" prefHeight="36.0" prefWidth="547.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" maxHeight="34.0" minHeight="34.0" prefHeight="34.0" style="-fx-background-color: linear-gradient(to right,#D85559, #913D87);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="29.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../OLink%20Redirect/src/main/java/resources/icon_micro.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="8.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label text="OLink Redirect" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <JFXButton fx:id="btnUpgrade" alignment="CENTER" contentDisplay="CENTER" maxHeight="20.0" minHeight="20.0" onAction="#startPlans" prefHeight="20.0" style="-fx-background-color: orange; -fx-background-radius: 15; -fx-border-radius: 15;" text="UPGRADE PRO" textFill="WHITE" AnchorPane.bottomAnchor="6.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="6.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="447.0" prefWidth="455.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="36.0">
+         <children>
+            <BorderPane layoutX="128.0" layoutY="209.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <VBox alignment="TOP_CENTER" prefHeight="188.0" prefWidth="455.0" spacing="10.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" text="Novo Link" textFill="#d85559">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="30.0" prefWidth="321.0" spacing="5.0">
+                           <children>
+                              <TextField fx:id="etTitle" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="346.0" promptText="Nome/Descrição" style="-fx-background-radius: 15; -fx-border-radius: 15;">
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="30.0" prefWidth="321.0" spacing="5.0">
+                           <children>
+                              <Label fx:id="domain" text="https://olink.cf/" textFill="#d85559" />
+                              <TextField fx:id="etNewLink" maxHeight="30.0" minHeight="30.0" onKeyPressed="#onEnter" prefHeight="30.0" prefWidth="260.0" promptText="Ex.:como-emagrecer" style="-fx-background-radius: 15; -fx-border-radius: 15;">
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" minHeight="38.0" prefHeight="38.0" prefWidth="389.0" spacing="10.0">
+                           <children>
+                              <JFXRadioButton fx:id="rbLinkAB" disable="true" text="Teste A/B">
+                                 <HBox.margin>
+                                    <Insets left="55.0" />
+                                 </HBox.margin>
+                              </JFXRadioButton>
+                              <TextField fx:id="etLinkCountTesteDay" disable="true" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="193.0" promptText="Dias de teste/link" style="-fx-background-radius: 15; -fx-border-radius: 15;">
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="16.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="163.0" minHeight="38.0" prefHeight="38.0" prefWidth="389.0" spacing="10.0">
+                           <children>
+                              <JFXRadioButton fx:id="rbLinkAB1" disable="true" text="Lançamento">
+                                 <HBox.margin>
+                                    <Insets left="55.0" />
+                                 </HBox.margin>
+                              </JFXRadioButton>
+                           </children>
+                        </HBox>
+                        <TitledPane contentDisplay="TOP" text="Configurações de Lançamento">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <JFXButton />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                           <padding>
+                              <Insets left="55.0" right="55.0" />
+                           </padding>
+                        </TitledPane>
+                        <AnchorPane maxHeight="300.0" minHeight="0.0" prefHeight="200.0" prefWidth="200.0">
+                           <VBox.margin>
+                              <Insets left="55.0" right="55.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                        <HBox alignment="CENTER" prefHeight="30.0" prefWidth="321.0" spacing="5.0">
+                           <children>
+                              <TextField fx:id="etLinkDestiny" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="346.0" promptText="https://video/345GTYHO" style="-fx-background-radius: 15; -fx-border-radius: 15;">
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="linkDestinyBBase" alignment="CENTER" layoutX="10.0" layoutY="195.0" prefHeight="30.0" prefWidth="321.0" spacing="5.0" visible="false">
+                           <children>
+                              <TextField fx:id="etLinkDestinyB" disable="true" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="346.0" promptText="https://video/345GTYHO-B" style="-fx-background-radius: 15; -fx-border-radius: 15;">
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="235.0" prefHeight="30.0" prefWidth="321.0" spacing="5.0" />
+                     </children>
+                  </VBox>
+               </top>
+               <center>
+                  <AnchorPane prefWidth="455.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="180.0" prefWidth="455.0" spacing="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <HBox alignment="CENTER" maxWidth="300.0" minWidth="300.0" prefHeight="25.0" spacing="5.0">
+                                 <children>
+                                    <ComboBox fx:id="cbRedirectTypes" disable="true" prefHeight="25.0" prefWidth="196.0" promptText="Redirecionamento Padrão" style="-fx-background-radius: 12; -fx-border-radius: 12;" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" minHeight="38.0" prefHeight="38.0" prefWidth="389.0" spacing="10.0">
+                                 <children>
+                                    <JFXRadioButton fx:id="rbLinkConversion" disable="true" text="Link de Conversão">
+                                       <HBox.margin>
+                                          <Insets left="45.0" />
+                                       </HBox.margin></JFXRadioButton>
+                                    <TextField fx:id="etValueConversion" alignment="CENTER" disable="true" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="209.0" promptText="Valor" style="-fx-background-radius: 15; -fx-border-radius: 15;">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="16.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="55.0" minHeight="38.0" prefHeight="38.0" prefWidth="389.0" spacing="10.0">
+                                 <children>
+                                    <JFXRadioButton fx:id="rbApplyPixel" disable="true" prefHeight="17.0" prefWidth="100.0" text="Aplicar Pixel">
+                                       <HBox.margin>
+                                          <Insets left="45.0" />
+                                       </HBox.margin></JFXRadioButton>
+                                    <ComboBox fx:id="cbEvents" disable="true" prefHeight="30.0" prefWidth="235.0" promptText="Meus Eventos" style="-fx-background-radius: 15;" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="20.0" layoutY="55.0" minHeight="38.0" prefHeight="38.0" prefWidth="389.0" spacing="10.0">
+                                 <children>
+                                    <TextField fx:id="etNewEvent" alignment="CENTER" disable="true" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="333.0" promptText="Novo Evento" style="-fx-background-radius: 15; -fx-border-radius: 15;">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                        <Label fx:id="lbPRO" alignment="CENTER" contentDisplay="CENTER" style="-fx-border-color: orange; -fx-border-radius: 15;" text="PRO" textFill="ORANGE" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin>
+                  </AnchorPane>
+               </center>
+               <bottom>
+                  <JFXButton fx:id="btnSave" buttonType="RAISED" contentDisplay="CENTER" prefHeight="30.0" prefWidth="144.0" style="-fx-background-color: #E8675F; -fx-background-radius: 15;" text="Salvar" textFill="WHITE" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <BorderPane.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </BorderPane.margin>
+                  </JFXButton>
+               </bottom>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+      <BorderPane fx:id="bpLoading" opacity="0.8" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="36.0">
+         <center>
+            <ProgressIndicator maxHeight="45.0" maxWidth="45.0" minHeight="45.0" minWidth="45.0" prefHeight="45.0" prefWidth="45.0" BorderPane.alignment="CENTER">
+               <effect>
+                  <ColorAdjust brightness="-0.26" hue="0.5" saturation="-0.02" />
+               </effect>
+            </ProgressIndicator>
+         </center>
+      </BorderPane>
+      <Label fx:id="lbPRO" alignment="CENTER" layoutX="21.0" layoutY="218.0" prefHeight="203.0" prefWidth="434.0" style="-fx-border-radius: 5; -fx-border-width: 2; -fx-border-color: #ff9900; -fx-background-color: #EEEEEE0f;" text="PRO" textFill="#ff9900" visible="false" AnchorPane.bottomAnchor="62.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="218.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <StackPane fx:id="stackPane" prefHeight="150.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0" />
+   </children>
+</AnchorPane>

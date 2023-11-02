@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.StackedBarChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.layout.StackPane?>
+<AnchorPane id="AnchorPane" prefHeight="507.0" prefWidth="804.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frames.graphic.GraphicController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="40.0" prefWidth="804.0" style="-fx-background-color: linear-gradient(to right, #E56560,#913D87);" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="34.0" fitWidth="27.0" layoutX="24.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="5.0">
+               <image>
+                  <Image url="@../../resources/icon_micro.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="50.0" layoutY="11.0" text="Análise de Precisão" textFill="WHITE" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="3.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="40.0" prefHeight="91.0" prefWidth="804.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <Label fx:id="lbDesemp" alignment="CENTER" contentDisplay="CENTER" layoutX="327.0" layoutY="61.0" prefHeight="40.0" prefWidth="236.0" text="Desempenho de Conteúdo" textFill="#bb5174" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="284.0" AnchorPane.rightAnchor="284.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="ivGraphic" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#openPopup" onMouseEntered="#ivChartOver" onMouseExited="#ivChartExited" opacity="0.93" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="11.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="11.0">
+               <image>
+                  <Image url="@../../resources/icon_graphic_pizza.png" />
+               </image>
+            </ImageView>
+            <HBox alignment="CENTER" prefHeight="27.0" prefWidth="784.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <AnchorPane fx:id="ap0" disable="true" prefHeight="29.0" prefWidth="81.0">
+                     <children>
+                        <ImageView fx:id="iv0" fitHeight="34.0" fitWidth="79.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <image>
+                              <Image url="@../../resources/step-first_disable.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="8.0" layoutY="12.0" prefHeight="17.0" prefWidth="87.0" text="ANUAIS" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <padding>
+                              <Insets right="12.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="ap1" disable="true" layoutX="10.0" layoutY="10.0" prefHeight="29.0" prefWidth="81.0">
+                     <children>
+                        <ImageView fx:id="iv1" fitHeight="34.0" fitWidth="79.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <image>
+                              <Image url="@../../resources/step-midle_disable.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="8.0" layoutY="12.0" prefHeight="17.0" prefWidth="87.0" text="MENSAIS" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="ap2" disable="true" layoutX="91.0" layoutY="10.0" prefHeight="29.0" prefWidth="81.0">
+                     <children>
+                        <ImageView fx:id="iv2" fitHeight="34.0" fitWidth="79.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <image>
+                              <Image url="@../../resources/step-midle_disable.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="8.0" layoutY="12.0" prefHeight="17.0" prefWidth="87.0" text="DIÁRIOS" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="ap3" disable="true" layoutX="334.0" layoutY="10.0" prefHeight="29.0" prefWidth="81.0">
+                     <children>
+                        <ImageView fx:id="iv4" fitHeight="34.0" fitWidth="79.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <image>
+                              <Image url="@../../resources/step-final_disable.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="8.0" layoutY="12.0" prefHeight="17.0" prefWidth="87.0" text="DIÁRIO" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <BorderPane layoutX="14.0" layoutY="149.0" prefHeight="238.0" prefWidth="784.0" style="-fx-border-color: #d9d9d9; -fx-border-radius: 5;" AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="149.0">
+         <center>
+            <StackedBarChart fx:id="chart" BorderPane.alignment="CENTER">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </StackedBarChart>
+         </center>
+      </BorderPane>
+      <BorderPane prefHeight="85.0" prefWidth="782.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+         <top>
+            <Label fx:id="lbContentName" alignment="CENTER" contentDisplay="CENTER" text="Full Name of Content" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </top>
+         <center>
+            <Label fx:id="lbCountClick" alignment="CENTER" contentDisplay="CENTER" prefHeight="56.0" prefWidth="214.0" text="0" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </center>
+      </BorderPane>
+      <Label alignment="CENTER" text="CLIQUES" textFill="#979797" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <AnchorPane fx:id="apIndicator" layoutY="102.0" prefHeight="405.0" prefWidth="804.0" style="-fx-background-color: #f1f1f1;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="102.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="254.0" layoutY="26.0" prefHeight="381.0" prefWidth="804.0" text="SELECIONE UM CONTEÚDO" textFill="#c3c3c3" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="26.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="302.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../../resources/indicator.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <BorderPane fx:id="bpLoading" opacity="0.8" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+         <center>
+            <JFXSpinner maxHeight="45.0" maxWidth="45.0" minHeight="45.0" minWidth="45.0" prefHeight="45.0" prefWidth="45.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+
+      <StackPane fx:id="stackPane" alignment="TOP_RIGHT" layoutX="469.0" prefHeight="437.0" prefWidth="295.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+         <userData>
+            <fx:reference source="controller"/>
+         </userData>
+      </StackPane>
+
+   </children>
+</AnchorPane>

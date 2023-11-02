@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="421.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-radius: 10;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="webconnection.DialogNoConnectionController">
+   <children>
+      <ImageView fitHeight="275.0" fitWidth="420.0" layoutX="18.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../resources/back_no_connection.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnFinish" buttonType="RAISED" layoutX="365.0" layoutY="271.0" minHeight="30.0" prefHeight="30.0" text="SAIR" textFill="#e8675e" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
+         <padding>
+            <Insets left="15.0" right="15.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

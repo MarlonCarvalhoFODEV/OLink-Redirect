@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minWidth="380.0" prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane maxHeight="36.0" prefHeight="36.0" prefWidth="547.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox alignment="CENTER_LEFT" maxHeight="34.0" minHeight="34.0" prefHeight="34.0" style="-fx-background-color: linear-gradient(to right,#D85559, #913D87);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <ImageView fitHeight="29.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../resources/icon_micro.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets left="8.0" />
+                            </HBox.margin>
+                        </ImageView>
+                        <Label text="OLink Redirect" textFill="WHITE">
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                </HBox>
+                <JFXButton fx:id="btnUpgrade" alignment="CENTER" contentDisplay="CENTER" maxHeight="20.0" minHeight="20.0" onAction="#startPlans" prefHeight="20.0" style="-fx-background-color: orange; -fx-background-radius: 15; -fx-border-radius: 15;" text="UPGRADE PRO" textFill="WHITE" AnchorPane.bottomAnchor="6.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="6.0">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </JFXButton>
+            </children>
+        </AnchorPane>
+        <ScrollPane hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0">
+            <content>
+                <AnchorPane prefWidth="400.0" style="-fx-background-color: white;">
+                    <children>
+                        <VBox alignment="TOP_CENTER" spacing="10.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                           <children>
+                                      <Label alignment="CENTER" contentDisplay="CENTER" text="Novo Link" textFill="#d85559">
+                                          <font>
+                                              <Font size="18.0" />
+                                          </font>
+                                          <VBox.margin>
+                                              <Insets top="16.0" />
+                                          </VBox.margin>
+                                      </Label>
+                                      <HBox alignment="CENTER" prefHeight="30.0" prefWidth="321.0" spacing="5.0">
+                                          <children>
+                                              <TextField fx:id="etTitle" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="346.0" promptText="Nome/Descrição" style="-fx-background-radius: 15; -fx-border-radius: 15;">
+                                                  <padding>
+                                                      <Insets left="10.0" right="10.0" />
+                                                  </padding>
+                                                  <font>
+                                                      <Font size="14.0" />
+                                                  </font>
+                                              </TextField>
+                                          </children>
+                                      </HBox>
+                                      <HBox alignment="CENTER" prefHeight="30.0" prefWidth="321.0" spacing="5.0">
+                                          <children>
+                                              <Label fx:id="domain" text="https://olink.cf/" textFill="#d85559" />
+                                              <TextField fx:id="etNewLink" maxHeight="30.0" minHeight="30.0" onKeyPressed="#onEnter" prefHeight="30.0" prefWidth="260.0" promptText="Ex.:como-emagrecer" style="-fx-background-radius: 15; -fx-border-radius: 15;">
+                                                  <padding>
+                                                      <Insets left="10.0" right="10.0" />
+                                                  </padding>
+                                                  <font>
+                                                      <Font size="14.0" />
+                                                  </font>
+                                              </TextField>
+                                          </children>
+                                      </HBox>
+                              <HBox alignment="CENTER" prefHeight="30.0" prefWidth="321.0" spacing="5.0">
+                                 <children>
+                                    <TextField fx:id="etLinkDestiny" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="346.0" promptText="https://video/345GTYHO" style="-fx-background-radius: 15; -fx-border-radius: 15;">
+                                       <padding>
+                                          <Insets left="10.0" right="10.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                                      <HBox alignment="CENTER_LEFT" minHeight="38.0" prefHeight="38.0" prefWidth="389.0" spacing="10.0">
+                                          <children>
+                                              <JFXRadioButton fx:id="rbLinkAB" disable="true" text="Teste A/B">
+                                                  <HBox.margin>
+                                                      <Insets left="20.0" />
+                                                  </HBox.margin>
+                                              </JFXRadioButton>
+                                              <TextField fx:id="etLinkCountTesteDay" disable="true" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" promptText="Dias de teste/link" style="-fx-background-radius: 15; -fx-border-radius: 15;">
+                                                  <padding>
+                                                      <Insets left="10.0" right="10.0" />
+                                                  </padding>
+                                                  <font>
+                                                      <Font size="14.0" />
+                                                  </font>
+                                       <HBox.margin>
+                                          <Insets left="8.0" />
+                                       </HBox.margin>
+                                              </TextField>
+                                          </children>
+                                      </HBox>
+                                      <HBox alignment="CENTER_LEFT" minHeight="38.0" prefHeight="38.0" prefWidth="389.0" spacing="10.0">
+                                          <children>
+                                              <JFXRadioButton fx:id="rbLinkAB1" disable="true" text="Lançamento">
+                                                  <HBox.margin>
+                                                      <Insets left="20.0" />
+                                                  </HBox.margin>
+                                              </JFXRadioButton>
+                                          </children>
+                                      </HBox>
+                           </children>
+                        </VBox>
+                                <TitledPane expanded="false" text="Configurações de Lançamento">
+                                    <padding>
+                                        <Insets left="20.0" right="20.0" />
+                                    </padding>
+                                    <content>
+                                        <VBox alignment="TOP_CENTER" prefWidth="100.0" spacing="5.0">
+                                            <children>
+                                                <HBox spacing="16.0">
+                                                    <children>
+                                                        <JFXDatePicker fx:id="dateStart" defaultColor="WHITE" editable="false" focusTraversable="false" promptText="Data de Início" showWeekNumbers="true" style="-jfx-default-color: linear-gradient(to right,#D85559, #913D87); -fx-border-color: linear-gradient(to right,#D85559, #913D87); -fx-border-radius: 18; -fx-padding: 3 3 3 30; -fx-border-image-slice: false;">
+                                                            <cursor>
+                                                                <Cursor fx:constant="DEFAULT" />
+                                                            </cursor>
+                                                            <opaqueInsets>
+                                                                <Insets />
+                                                            </opaqueInsets>
+                                                        </JFXDatePicker>
+                                                        <JFXDatePicker defaultColor="WHITE" editable="false" focusTraversable="false" layoutX="10.0" layoutY="10.0" promptText="Data de Término" showWeekNumbers="true" style="-jfx-default-color: linear-gradient(to right,#D85559, #913D87); -fx-border-color: linear-gradient(to right,#D85559, #913D87); -fx-border-radius: 18; -fx-padding: 3 3 3 25; -fx-border-image-slice: false;">
+                                                            <cursor>
+                                                                <Cursor fx:constant="DEFAULT" />
+                                                            </cursor>
+                                                            <opaqueInsets>
+                                                                <Insets />
+                                                            </opaqueInsets>
+                                                        </JFXDatePicker>
+                                                    </children>
+                                                </HBox>
+                                                <HBox spacing="16.0">
+                                                    <children>
+                                                        <JFXTimePicker layoutX="10.0" layoutY="10.0" promptText="Horário de Início" style="-jfx-default-color: linear-gradient(to right,#D85559, #913D87); -fx-border-color: linear-gradient(to right,#D85559, #913D87); -fx-border-radius: 20; -fx-padding: 0 0 0 30;" />
+                                                        <JFXTimePicker layoutX="10.0" layoutY="10.0" promptText="Horário de Término" style="-jfx-default-color: linear-gradient(to right,#D85559, #913D87); -fx-border-color: linear-gradient(to right,#D85559, #913D87); -fx-border-radius: 20; -fx-padding: 0 0 0 30;" />
+                                                    </children>
+                                                </HBox>
+                                    <Label text="Direcionamento">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="16.0" top="16.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <HBox alignment="CENTER" prefHeight="30.0" prefWidth="321.0" spacing="5.0">
+                                       <children>
+                                          <TextField fx:id="etTitle1" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="346.0" promptText="URL:// Antes do Lançamento" style="-fx-background-radius: 15; -fx-border-radius: 15;">
+                                             <padding>
+                                                <Insets left="10.0" right="10.0" />
+                                             </padding>
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" layoutX="20.0" layoutY="154.0" prefHeight="30.0" prefWidth="321.0" spacing="5.0">
+                                       <children>
+                                          <TextField fx:id="etTitle11" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="346.0" promptText="URL:// Durante o Lançamento" style="-fx-background-radius: 15; -fx-border-radius: 15;">
+                                             <padding>
+                                                <Insets left="10.0" right="10.0" />
+                                             </padding>
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" layoutX="20.0" layoutY="189.0" prefHeight="30.0" prefWidth="321.0" spacing="5.0">
+                                       <children>
+                                          <TextField fx:id="etTitle111" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="346.0" promptText="URL:// Depois do Lançamento" style="-fx-background-radius: 15; -fx-border-radius: 15;">
+                                             <padding>
+                                                <Insets left="10.0" right="10.0" />
+                                             </padding>
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </HBox>
+                                            </children>
+                                        </VBox>
+                                    </content>
+                                </TitledPane>
+                            </children>
+                        </VBox>
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

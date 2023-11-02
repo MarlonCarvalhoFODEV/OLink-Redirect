@@ -1,0 +1,1367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane prefHeight="527.0" prefWidth="1000.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frames.plans.PlansController">
+   <children>
+      <BorderPane layoutX="179.0" layoutY="83.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="43.0" prefWidth="597.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="37.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="3.0">
+                     <image>
+                        <Image url="@../../resources/icon.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="285.0" layoutY="13.0" prefHeight="17.0" prefWidth="64.0" text="PLANOS" AnchorPane.leftAnchor="266.0" AnchorPane.rightAnchor="266.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="25.0" top="5.0" />
+               </BorderPane.margin>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="85.0" prefWidth="760.0" BorderPane.alignment="BOTTOM_CENTER">
+               <children>
+                  <ImageView fitHeight="95.0" fitWidth="1000.0" layoutX="10.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.0">
+                     <image>
+                        <Image url="@../../resources/back_bottom.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="56.0" layoutY="77.0" text="Powered By Renda Livre.com" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="56.0" AnchorPane.rightAnchor="-56.0" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="23.0" layoutY="62.0" text="suporte-olink@rendalivre.com" textFill="WHITE" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="10.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </bottom>
+         <center>
+            <HBox alignment="CENTER" prefHeight="238.0" prefWidth="597.0" spacing="25.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane prefHeight="360.0" prefWidth="218.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5;">
+                     <children>
+                        <Label alignment="CENTER" layoutX="86.0" layoutY="6.0" prefHeight="35.0" style="-fx-background-color: #E9675E; -fx-background-radius: 5;" text="FREE" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="7.0" layoutY="30.0" prefHeight="20.0" style="-fx-background-color: #CB5A6A;" text="vitalício" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0" />
+                        <VBox prefHeight="244.0" prefWidth="200.0" AnchorPane.bottomAnchor="56.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Links customizáveis">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="10.0" layoutY="45.0" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Propagandas">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="10.0" layoutY="45.0" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Canais Sociais">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="10.0" layoutY="80.0" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Organizador">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="10.0" layoutY="115.0" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Camuflador de Urls">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_close_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="10.0" layoutY="150.0" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Pixel de Rastreamento">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_close_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="10.0" layoutY="185.0" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Pixel Event">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_close_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="10.0" layoutY="196.0" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Métricas de Análise Precisa">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_close_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="10.0" layoutY="199.0" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Proteção Contra Invasão">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_close_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Canais Customizados">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_close_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Teste A/B">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_close_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Link de Lançamento">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_close_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Clone Page">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_close_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Link Page Creator">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_close_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Email Marketing">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_close_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="10.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <JFXButton disable="true" layoutX="14.0" layoutY="300.0" onAction="#startPlanFree" prefHeight="38.0" prefWidth="172.0" style="-fx-background-color: #b1b1b1;" text="CONTRATADO" textFill="WHITE" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     <effect>
+                        <DropShadow blurType="TWO_PASS_BOX" color="#a8a8a8" />
+                     </effect>
+                  </AnchorPane>
+                  <AnchorPane layoutX="261.0" layoutY="10.0" prefHeight="360.0" prefWidth="218.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5;">
+                     <children>
+                        <Label alignment="CENTER" layoutX="86.0" layoutY="6.0" prefHeight="35.0" style="-fx-background-color: #E9675E; -fx-background-radius: 5;" text="Mensal" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="7.0" layoutY="30.0" prefHeight="20.0" style="-fx-background-color: #CB5A6A;" text="iniciante" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0" />
+                        <VBox layoutX="50.0" layoutY="40.0" prefHeight="244.0" prefWidth="200.0" AnchorPane.bottomAnchor="56.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="201.0" text="R$ 11,04">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Links customizáveis">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Remoção de Propagandas">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Canais Sociais">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Organizador">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Camuflador de Urls">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Pixel de Rastreamento">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Pixel Event">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Métricas de Análise Precisa">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Proteção Contra Invasão">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Canais Customizados">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="10.0" layoutY="339.0" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Teste A/B">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="10.0" layoutY="372.0" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Link de Lançamento">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Clone Page">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_close_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Link Page Creator">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_close_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Email Marketing">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_close_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="10.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="300.0" onAction="#startPlanMensal" prefHeight="38.0" prefWidth="172.0" style="-fx-background-color: #54A952;" text="CONTRATAR" textFill="WHITE" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     <effect>
+                        <DropShadow blurType="TWO_PASS_BOX" color="#a8a8a8" />
+                     </effect>
+                  </AnchorPane>
+                  <AnchorPane layoutX="403.0" layoutY="10.0" prefHeight="360.0" prefWidth="218.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5;">
+                     <children>
+                        <Label alignment="CENTER" layoutX="86.0" layoutY="6.0" prefHeight="35.0" style="-fx-background-color: #E9675E; -fx-background-radius: 5;" text="TRIMESTRAL" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="7.0" layoutY="30.0" prefHeight="20.0" style="-fx-background-color: #CB5A6A;" text="intermediário" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0" />
+                        <VBox layoutX="50.0" layoutY="40.0" prefHeight="244.0" prefWidth="200.0" AnchorPane.bottomAnchor="56.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="201.0" text="R$ 22,05">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Links customizáveis">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Remoção de Propagandas">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Canais Sociais">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Organizador">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Camuflador de Urls">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Pixel de Rastreamento">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Pixel Event">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Métricas de Análise Precisa">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Proteção Contra Invasão">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Canais Customizados">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="10.0" layoutY="360.0" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Teste A/B">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="10.0" layoutY="398.0" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Links de Lançamento">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="10.0" layoutY="405.0" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Clone Page">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_close_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="10.0" layoutY="438.0" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Link Page Creator">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_close_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="10.0" layoutY="411.0" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Email Marketing">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_close_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="10.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="300.0" onAction="#startPlanTrimestral" prefHeight="38.0" prefWidth="172.0" style="-fx-background-color: #54A952;" text="CONTRATAR" textFill="WHITE" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     <effect>
+                        <DropShadow blurType="TWO_PASS_BOX" color="#a8a8a8" />
+                     </effect>
+                  </AnchorPane>
+                  <AnchorPane layoutX="524.0" layoutY="10.0" prefHeight="360.0" prefWidth="218.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5;">
+                     <children>
+                        <Label alignment="CENTER" layoutX="86.0" layoutY="6.0" prefHeight="35.0" style="-fx-background-color: #E9675E; -fx-background-radius: 5;" text="ANUAL" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="7.0" layoutY="30.0" prefHeight="20.0" style="-fx-background-color: #CB5A6A;" text="profissional" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0" />
+                        <VBox layoutX="50.0" layoutY="40.0" prefHeight="244.0" prefWidth="200.0" AnchorPane.bottomAnchor="56.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="201.0" text="R$ 49,99">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Links customizáveis">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Remoção de Propagandas">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Canais Sociais">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Organizador">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Camuflador de Urls">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Pixel de Rastreamento">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Pixel Event">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Métricas de Análise Precisa">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Proteção Contra Invasão">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Canais Customizados">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="10.0" layoutY="360.0" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Teste A/B">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="10.0" layoutY="398.0" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Links de Lançamento">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Clone Page">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/icon_check_vaz.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Link Page Creator">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/ic_clock.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="153.0" text="Email Marketing">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/ic_clock.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="10.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="300.0" onAction="#startPlanAnual" prefHeight="38.0" prefWidth="172.0" style="-fx-background-color: #54A952;" text="CONTRATAR" textFill="WHITE" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     <effect>
+                        <DropShadow blurType="TWO_PASS_BOX" color="#a8a8a8" />
+                     </effect>
+                  </AnchorPane>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="50.0" />
+               </BorderPane.margin>
+            </HBox>
+         </center>
+      </BorderPane>
+      <WebView fx:id="wvLoadPay" prefHeight="437.0" prefWidth="597.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <BorderPane fx:id="bpLoading" opacity="0.8" style="-fx-background-color: white;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <JFXSpinner maxHeight="45.0" maxWidth="45.0" minHeight="45.0" minWidth="45.0" prefHeight="45.0" prefWidth="45.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
