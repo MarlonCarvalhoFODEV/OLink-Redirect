@@ -2,7 +2,9 @@
  Programa desenvolvido em JavaFX para rodar no windows, linux ou outro sistema operacional que possua o JDK Instalado. Esse sistema é voltado ao marketing digital como um redirecionador de links como o bit.ly, mas com funções diferenciadas como aplicar PIXEL de rstreamento, testes A/B, gerenciamento de link por canais sociais como conteudos do Youtube, Instagram, Facebook etc... Além disso é possivel visualizar estatísticas de desempenho de cada link, como taxa de cliques por dia,semana,mes ou ano atráves de um gráfico charts
 
 https://github.com/user-attachments/assets/709e1f62-584d-4a58-83f1-20b2dec5ddcb
+
 https://github.com/user-attachments/assets/7c9e4b6f-ee7a-4ba6-a757-efa1abb60355
+
 https://github.com/user-attachments/assets/9b8b553d-da29-4519-a66e-1474c6c06f9f
 
 <img width="700" height="700" alt="Untitled-6" src="https://github.com/user-attachments/assets/ffba79eb-c5ef-4c03-a683-453705030e95" />
